@@ -1,20 +1,32 @@
 // src/components/AboutSection.js
 import React from 'react';
+import './AboutSection.css'; // Neue CSS-Datei für diese Komponente
 
 const AboutSection = () => {
+  const features = [
+    { title: "artenreich ist" },
+    { title: "gute Bodenqualität aufweist" },
+    { title: "schädlingsresistent ist" },
+    { title: "verlässliche Erträge liefert" }
+  ];
+
   return (
     <section id="about" className="about-section">
       <div className="container">
         <div className="about-content">
           <h2>Was ist Permakultur?</h2>
-          <p>Permakultur ist ein ganzheitliches Konzept für nachhaltige Lebens- und Wirtschaftsweisen. Es versteht sich als ein möglichst naturnah gestaltetes, sich selbst erhaltendes Ökosystem – bestehend aus ein- und mehrjährigen Pflanzen, Tieren und Menschen. Ziel ist ein stabiles System, das:</p>
+          <p>Permakultur ist ein nachhaltiges, naturnahes Konzept für ein sich selbst erhaltendes Ökosystem aus Pflanzen, Tieren und Menschen:</p>
           
-          <ul className="features-list">
-            <li><strong>artenreich</strong> ist</li>
-            <li><strong>gute Bodenqualität</strong> aufweist</li>
-            <li><strong>schädlingsresistent</strong> ist</li>
-            <li>und <strong>verlässliche Erträge</strong> liefert</li>
-          </ul>
+          <div className="features-grid">
+            {features.map((feature, index) => (
+              <div key={index} className="feature-card">
+                <div className="feature-content">
+                  <strong>{feature.title}</strong>
+                  <span>{feature.description}</span>
+                </div>
+              </div>
+            ))}
+          </div>
           
           <p>Permakultur arbeitet stets <strong>mit</strong>, nie <strong>gegen</strong> die geografischen und natürlichen Gegebenheiten eines Ortes. Der Garten passt sich seiner Umgebung an und nicht umgekehrt.</p>
           

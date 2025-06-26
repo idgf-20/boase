@@ -517,3 +517,120 @@ section {
     margin-bottom: 1rem;
   }
 }
+
+/* Principles Section Updates */
+.principles-section .section-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+.principle-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 1.8rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.principle-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  border-color: var(--secondary);
+}
+
+.principle-card h3 {
+  color: var(--primary-dark);
+  margin-bottom: 0.8rem;
+  font-size: 1.25rem;
+}
+
+.principle-card p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 0;
+}
+
+.call-to-action {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: rgba(139, 195, 74, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+}
+
+.call-to-action p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: var(--accent);
+  font-size: 1rem;
+  padding: 0.9rem 2rem;
+}
+
+.btn:hover {
+  background-color: #e65100;
+}
+
+/* Erweiterungen in App.css */
+.principle-card {
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.principle-card.expanded {
+  padding-bottom: 1.5rem;
+}
+
+.short-desc {
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-desc {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px dashed var(--secondary);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.expand-icon {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+
+.action-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.action-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
