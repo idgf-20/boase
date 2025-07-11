@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 /* src/App.css */
 :root {
   --primary: #4caf50;
@@ -133,12 +135,14 @@ section {
   display: flex;
   list-style: none;
   gap: 1.5rem;
+  
 }
 
 .nav a {
   font-weight: 600;
-  color: var(--text);
+  color: var(--white);
   text-decoration: none;
+  
 }
 
 .nav a:hover {
@@ -151,7 +155,7 @@ section {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--text);
+  color: var(--white);
 }
 
 /* Principles Section */
@@ -434,15 +438,16 @@ section {
 }
 
 .contact-info h4, .social-links h4 {
-  color: var(--secondary);
+  color: var(--dark);
   margin-bottom: 1rem;
+  
 }
 
 .email-link {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--white);
+  color: var(--dark);
 }
 
 .email-link:hover {
@@ -485,10 +490,10 @@ section {
   
   .nav {
     position: fixed;
-    top: 80px;
+    top: 100px;
     left: 0;
     right: 0;
-    background-color: var(--white);
+    background-color: var(--dark);
     padding: 2rem;
     box-shadow: var(--shadow);
     transform: translateY(-150%);
@@ -634,3 +639,35 @@ section {
   background: var(--primary-dark);
   transform: translateY(-2px);
 }
+
+
+/*Header_Einstellungen*/
+.logo-img {
+  height: 70px; /* oder z.B. 30px je nach gewünschter Größe */
+  width: auto;
+  margin-right: -20px;
+  margin-left:0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.header {
+  background-color: var(--dark); /* helles Grün, z.B. Tailwind's lime-200 */
+  padding: 1rem 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container h1 {
+  margin-left: px; /* Alternative zu margin-right am Bild */
+  color: #f1f8e9;
+  margin-bottom: 0px;
+  
+}
+
+
+
+

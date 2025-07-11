@@ -1,0 +1,33 @@
+.logo-img {
+  height: 100px; /* oder z.B. 30px je nach gewünschter Größe */
+  width: auto;
+  margin-right: 10px;
+}
+
+.header {
+  background-color: #035603eb; /* helles Grün, z.B. Tailwind's lime-200 */
+  padding: 1rem 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container h1 {
+  margin-left: 0px; /* Alternative zu margin-right am Bild */
+}
+
+
+/* Für alle Links im Menü */
+.nav a {
+  color: #eef1f1; /* z. B. Dunkelgrün / Dunkelgrau */
+  text-decoration: none; /* optional: Unterstreichung entfernen */
+  font-weight: 500;       /* optional: kräftigerer Text */
+}
+
+/* Optional: Hover-Effekt */
+.nav a:hover {
+  color: #4CAF50; /* z. B. helleres Grün beim Hover */
+}
+

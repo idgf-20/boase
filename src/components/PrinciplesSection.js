@@ -129,16 +129,7 @@ const PrinciplesSection = () => {
               {expandedCard === index && (
                 <div className="full-desc">
                   <p>{principle.fullDesc}</p>
-                  <button 
-                    className="action-btn"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      window.location.href = '#contact';
-                    }}
-                    aria-label={`Mehr erfahren über ${principle.title}`}
-                  >
-                    Mitmachen
-                  </button>
+                  
                 </div>
               )}
               

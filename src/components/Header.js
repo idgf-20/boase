@@ -1,6 +1,7 @@
-// src/components/Header.js
 import React, { useState } from 'react';
-import { FaSeedling, FaBars, FaTimes } from 'react-icons/fa';
+
+import { FaBars, FaTimes } from 'react-icons/fa';
+//import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,8 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="logo-container">
-          <FaSeedling className="logo-icon" />
+          {/* Logo-Bild aus dem public-Ordner */}
+          <img src="/BOase_logos_final-7.png" alt="Logo" className="logo-img" />
           <h1>BOase Hochschulgarten</h1>
         </div>
         
@@ -24,12 +26,9 @@ const Header = () => {
         <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
           <ul>
             <li><a href="#welcome">Willkommen</a></li>
-            <li><a href="#garden">Der Garten</a></li>
+            <li><a href="#garden">Garten</a></li>
             <li><a href="#about">Permakultur</a></li>
             <li><a href="#principles">Prinzipien</a></li>
-            
-            
-            
             <li><a href="#design">Gestaltung</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#contact">Kontakt</a></li>
