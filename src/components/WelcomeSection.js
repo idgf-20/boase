@@ -6,14 +6,12 @@ const WelcomeSection = () => {
     <section id="welcome" className="welcome-section">
       <div className="container">
         <div className="welcome-content">
-          <h2>Hallo und herzlich willkommen!</h2>
-          <p>Schaut euch gerne in der <strong>BOase</strong> um.</p>
+          <h2>Willkommen in der BOase – dem grünen Herzen des Campus!</h2>
           
           <div className="welcome-text">
-            <p>Wir sind ein studentisches Projekt, das seit dem Sommersemester 2018 diesen wunderschönen Permakulturgarten hegt und pflegt.</p>
-            <p>Der Garten ist ein Ort zum <strong>Forschen, Lernen und Gärtnern</strong> – ein Ort, an dem wir <strong>Nachhaltigkeit erleben</strong> können.</p>
-            <p>Wenn du einen Ausgleich zum Hochschulalltag brauchst oder Lust auf Gartenarbeit an der frischen Luft hast, bist du hier genau richtig!</p>
-            <p>Das gemeinsame Gärtnern macht nicht nur Spaß – wir können auch eine Menge lernen und erfahren, ganz im Sinne der Permakultur.</p>
+            <p>Seit 2018 gestalten und pflegen wir als studentisches Projekt unseren Permakulturgarten – einen Ort zum Gärtnern, Lernen und Durchatmen.
+              Ob als Ausgleich zum Unialltag oder aus purer Lust am nachhaltigen Gärtnern:
+              Mach mit, erlebe Natur und wachse mit uns!.</p>
           </div>
         </div>
       </div>
